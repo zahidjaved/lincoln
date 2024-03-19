@@ -1,0 +1,3954 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+}
+
+img {
+  width: 100%;
+}
+
+ul,
+ol,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p,
+span {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-ExtraBold.woff2") format("woff2"),
+    url("../fonts/PlusJakartaSans-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-BoldItalic.woff2") format("woff2"),
+    url("../fonts/PlusJakartaSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-Bold.woff2") format("woff2"),
+    url("../fonts/PlusJakartaSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-ExtraBoldItalic.woff2") format("woff2"),
+    url("../fonts/PlusJakartaSans-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-ExtraLight.woff2") format("woff2"),
+    url("../fonts/PlusJakartaSans-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-ExtraLightItalic.woff2") format("woff2"),
+    url("../fonts/PlusJakartaSans-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-Light.woff2") format("woff2"),
+    url("../fonts/PlusJakartaSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-LightItalic.woff2") format("woff2"),
+    url("../fonts/PlusJakartaSans-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-Medium.woff2") format("woff2"),
+    url("../fonts/PlusJakartaSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-Regular.woff2") format("woff2"),
+    url("../fonts/PlusJakartaSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-MediumItalic.woff2") format("woff2"),
+    url("../fonts/PlusJakartaSans-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/PlusJakartaSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-SemiBoldItalic.woff2") format("woff2"),
+    url("../fonts/PlusJakartaSans-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* universal padding left and right */
+.main-padding {
+  padding-left: 54px;
+  padding-right: 54px;
+}
+
+/* HOME PAGE CSS */
+
+/* header css */
+header {
+  padding: 30px 54px;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.header-logo {
+  width: 100%;
+  max-width: 178px;
+  margin-right: 84px;
+}
+
+ul#menu {
+  max-width: 1500px;
+  width: 100%;
+  justify-content: space-between;
+  margin-right: 58px;
+  align-items: center;
+}
+
+.navbar-nav li a {
+  color: #111;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  /* 19.6px */
+  border-bottom: 1px solid transparent;
+  transition: 0.4s ease-in-out;
+}
+
+.navbar-nav li a:hover {
+  color: #fff;
+}
+
+.navbar-nav li {
+  padding: 8px 24px;
+  border-radius: 32px;
+  transition: 0.4s ease-in-out;
+}
+
+.navbar-nav li span {
+  display: block;
+  margin-top: 8px;
+}
+
+.navbar-nav li:hover {
+  background: #ec6c2d;
+}
+
+.get-started {
+  border-radius: unset !important;
+  background: transparent;
+  padding: 8px 12px;
+  color: #fff;
+  margin-left: 20px;
+  border-bottom: 1px solid #111;
+}
+
+/* home-banner css */
+
+.home-banner {
+  background: #ffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  padding-top: 193px;
+  padding-bottom: 171px;
+  position: relative;
+}
+
+.home-banner::before {
+  content: " ";
+  background-image: url(../img/home-banner.png);
+  width: 100%;
+  max-width: 808px;
+  top: 195px;
+  right: 160px;
+  height: 964px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.homer-banner-content {
+  width: 100%;
+  max-width: 940px;
+  z-index: 2;
+}
+
+.homer-banner-content h1 {
+  color: #023661;
+  font-family: "Plus Jakarta Sans";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 18px;
+}
+
+.homer-banner-content p {
+  max-width: 523px;
+  color: #777;
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  margin-bottom: 48px;
+}
+
+.homer-banner-content a {
+  border-radius: 50px;
+  padding: 24px 32px;
+  border: 1px solid #fff;
+  background: #ec6c2d;
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  transition: all 0.4s ease-in-out;
+  z-index: 3;
+  position: relative;
+}
+
+.homer-banner-content a:hover {
+  background: #111;
+}
+
+.homer-banner-content img {
+  width: 20px;
+}
+
+.banner-congrates {
+  width: 100%;
+  max-width: 305px;
+  margin: 0 auto;
+  padding: 29px 29px;
+  background: #fff;
+  border-radius: 19.213px;
+  box-shadow: 6.00394px 6.00394px 24.01575px 0px rgba(0, 0, 0, 0.06);
+  z-index: 1;
+  position: relative;
+}
+
+.banner-congrates img {
+  width: 48px;
+  margin-bottom: 10px;
+}
+
+.banner-congrates p {
+  color: #111;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16.811px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.benefits {
+  margin-top: -37px;
+}
+
+/* challenges-section css */
+
+.challenges-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.challenges-content {
+  width: 100%;
+  max-width: 652px;
+  margin: 0 auto;
+}
+
+.challenges-content h2 {
+  color: #111;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 32px;
+}
+
+.challenges-content-description {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.challenges-content-description p {
+  color: #777;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  margin-bottom: 60px;
+}
+
+.challenges-content-description p span {
+  color: #023661;
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 180%;
+}
+
+.challenges-accordions {
+  width: 100%;
+  max-width: 642px;
+}
+
+.accordion-item {
+  border: none;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.accordion-item h2 button {
+  color: #111;
+  font-family: " Plus Jakarta Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.accordion-item p {
+  color: #777;
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  background-color: #ffffff;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #ec6c2d;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border: unset !important;
+}
+
+/* process section css */
+.process-section {
+  padding-top: 80px;
+  padding-bottom: 110px;
+  background-image: url(../img/process-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.process-section-content {
+  width: 100%;
+  max-width: 612px;
+}
+
+.process-section-content h2 {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 40px;
+}
+
+.process-section-content p {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  margin-bottom: 72px;
+}
+
+.process-section-content a {
+  border-radius: 50px;
+  border: 1px solid #fff;
+  padding: 24px 32px;
+  color: #fafafa;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  transition: all 0.4s ease-in-out;
+}
+
+.process-section-content a:hover {
+  background: #111;
+}
+
+.process-section-content a img {
+  width: 20px;
+}
+
+/* lender-section css */
+.lender-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-image: url(../img/lender-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lender-content {
+  width: 100%;
+  max-width: 563px;
+}
+
+.lender-content h2 {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 32px;
+}
+
+.lender-content p {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+}
+
+.lender-content p span {
+  color: #ec6c2d;
+}
+
+.lender-card {
+  width: 100%;
+  max-width: 689px;
+  padding: 24px 24px;
+  border-radius: 24px;
+  background: #f8f8f8;
+  margin-bottom: 16px;
+}
+
+.lender-card h2 {
+  color: #111;
+  font-family: "Plus Jakarta Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  margin-bottom: 8px;
+}
+
+.lender-card p {
+  color: #777;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+}
+
+.lender-description {
+  width: 100%;
+  max-width: 689px;
+}
+
+.lender-description p {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  margin: 25px 0px 49px;
+}
+
+.lender-description a img {
+  width: 20px;
+}
+
+.lender-description a {
+  border-radius: 50px;
+  padding: 24px 32px;
+  background: #ec6c2d;
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  transition: all 0.4s ease-in-out;
+}
+
+.lender-description a:hover{
+background: #111;
+}
+
+/* HOME PAGE CSS END HERE */
+
+/* ABOUT PAGE CSS */
+.about-banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/about-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-banner-content {
+  max-width: 893px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-banner-content h1 {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.about-banner-content h1 span {
+  color: #ec6c2d;
+}
+
+#about-page li a {
+  color: #fff;
+}
+
+#about-page .get-started {
+  border-bottom: 1px solid #fff;
+}
+
+/* about css */
+.about {
+  padding-top: 81px;
+  padding-bottom: 120px;
+  background: #f8f8f8;
+}
+
+.about-left-content {
+  width: 100%;
+  max-width: 566px;
+}
+
+.about-left-content h3 {
+  color: #ec6c2d;
+  font-family: "Plus Jakarta Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 31px;
+}
+
+.about-left-content h2 {
+  color: #111;
+  font-family: "Plus Jakarta Sans";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.about-left-content h2 span {
+  font-weight: 700;
+}
+
+.about-right-content {
+  width: 100%;
+  max-width: 626px;
+}
+
+.about-right-content p {
+  color: #111;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+}
+
+.about-right-content p span {
+  font-weight: 600;
+}
+
+.about-counters {
+  padding: 54px 54px;
+  border-radius: 32px;
+  background: #ec6c2d;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 42px;
+  margin-bottom: 20px;
+}
+
+.counter {
+  width: 25%;
+  border-right: 1px solid #e3e3e3;
+  text-align: center;
+}
+
+.counter:first-child {
+  text-align: justify;
+  width: 23%;
+}
+
+.counter:last-child {
+  text-align: end;
+  border-right: unset;
+  width: 23%;
+}
+
+.counter h2 {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  margin-bottom: 16px;
+}
+
+.counter p {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.about-record-content {
+  width: 100%;
+  max-width: 469px;
+  padding: 27px 46px 69px;
+  border-radius: 32px;
+  background: #fff;
+}
+
+.about-record-content a {
+  border-radius: 50px;
+  border: 1px solid #ec6c2d;
+  padding: 16px 32px;
+  color: #ec6c2d;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.about-record-content p {
+  color: #111;
+  font-family: " Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 52px;
+}
+
+.about-record-image {
+  width: 100%;
+}
+
+.about-record-image img {
+  border-radius: 32px;
+  max-height: 578px;
+  object-fit: cover;
+}
+
+/* experience-section */
+.experience-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url(../img/experiencess.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.experience-content {
+  width: 100%;
+  max-width: 673px;
+  margin: 0 auto;
+}
+
+.experience-content h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 58px;
+}
+
+.experience-content a {
+  border-radius: 50px;
+  padding: 24px 32px;
+  background: #ec6c2d;
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  transition: all 0.4s ease-in-out;
+}
+
+.experience-btn {
+  text-align: center;
+}
+
+.experience-content a:hover {
+  background: #111;
+}
+
+.experience-content img {
+  width: 20px;
+}
+
+.experience-team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 60px;
+}
+
+.experience-expert {
+  width: 32%;
+  border-radius: 32px;
+  background: #fff;
+  padding: 32px 31px 24px;
+}
+
+.experience-expert-h3 {
+  color: #999;
+  text-align: right;
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  margin-bottom: 8px;
+}
+
+.experience-expert-h2 {
+  color: #111;
+  font-family: "Plus Jakarta Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  margin-bottom: 16px;
+}
+
+.experience-expert-p {
+  color: #9f9f9f;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  padding-right: 45px;
+}
+
+.experience-approach {
+  width: 65%;
+  border-radius: 32px;
+  background: #fff;
+  padding: 32px 31px 24px;
+}
+
+.experience-approach-p {
+  padding-right: 359px;
+}
+
+/* expert-section css */
+.expert-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.expert-head h2 {
+  color: #111;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 120%;
+  margin-bottom: 60px;
+}
+
+.expert-box {
+  display: flex;
+  border-radius: 32px;
+  background: #f8f8f8;
+  padding: 40px 54px 0px 0px;
+}
+
+.expert-box-content {
+  width: 50%;
+}
+
+.expert-box-image {
+  width: 100%;
+  max-width: 660px;
+}
+
+.expert-box-content a {
+  border-radius: 50px;
+  border: 1px solid #ec6c2d;
+  padding: 16px 32px;
+  color: #ec6c2d;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  transition: all 0.3s ease-in-out;
+}
+
+.expert-box-content a:hover {
+  background: #111;
+}
+
+.expert-box-content h2 {
+  color: #111;
+  font-family: "Plus Jakarta Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 180%;
+  margin-top: 24px;
+}
+
+.expert-box-content p {
+  color: #9f9f9f;
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 180%;
+}
+
+.expert-box-content p span {
+  display: block;
+  margin-top: 55px;
+}
+
+/* team-section css */
+.team-section {
+  padding-bottom: 120px;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.team {
+  width: 24%;
+}
+
+.team-image {
+  margin-bottom: 22px;
+}
+
+.team h3 {
+  color: #111;
+  font-family: "Plus Jakarta Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 140%;
+  margin-bottom: 8px;
+}
+
+.team p {
+  color: #9f9f9f;
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 160%;
+}
+
+#about-footer {
+  background: #f8f8f8;
+}
+
+/* what we do page css */
+.what-we-banner {
+  padding-top: 193px;
+  padding-bottom: 171px;
+  background-image: url(../img/what-we-do-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.homer-banner-content h3 {
+  color: #ec6c2d;
+  font-family: "Plus Jakarta Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 180%;
+  margin-bottom: 19px;
+}
+
+.what-we-banner h1 {
+  padding-right: 30px;
+}
+
+.what-we-banner p {
+  max-width: 876px;
+}
+
+.help-client {
+  font-weight: 700;
+}
+
+.our {
+  display: block;
+  margin-top: 55px;
+}
+
+/* analysis-section css */
+.analysis-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  /* background: #356184; */
+  background-image: linear-gradient(#1A486F, #597F9F);
+}
+
+.analysis-section-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.analysis-box {
+  width: 32%;
+  padding: 32px 32px;
+  border-radius: 32px;
+  background: #FFF;
+}
+
+.analysis-box img {
+  width: 68px;
+  margin-bottom: 48px;
+}
+
+.analysis-box h2 {
+  color: #111;
+  font-family: " Plus Jakarta Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  margin-bottom: 16px;
+}
+
+.analysis-box p {
+  color: #9F9F9F;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 180%;
+}
+
+/* services-section css */
+.services-section {
+  padding-top: 109px;
+  padding-bottom: 73px;
+}
+
+.services-acordian {
+  width: 100%;
+  max-width: 660px;
+}
+
+.services-acordian h2 {
+  color: #111;
+  font-family: "Plus Jakarta Sans";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 120%;
+}
+
+.services-image {
+  width: 100%;
+  max-width: 710px;
+}
+
+/* process-section css */
+.processs-section {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.process-head {
+  width: 100%;
+  max-width: 884px;
+  margin: 0 auto;
+}
+
+.process-head h2 {
+  color: #EC6C2D;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 60px;
+}
+
+.progress-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.progress-boxe {
+  width: 32%;
+  border-radius: 16px;
+  background: #F8F8F8;
+  padding: 24px 48px;
+}
+
+.progress-boxe h3 {
+  color: #111;
+  font-family: "Plus Jakarta Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.progress-boxe h3 span img {
+  width: 48px;
+  margin-right: 8px;
+}
+
+.progress-boxe p {
+  color: #777;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 140%;
+}
+
+.process-section-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.process-section-btn p {
+  color: #111;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 180%;
+  width: 55%;
+}
+
+.process-section-btn a {
+  border-radius: 50px;
+  padding: 24px 32px;
+  border: 1px solid #fff;
+  background: #ec6c2d;
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  transition: all 0.4s ease-in-out;
+}
+
+.process-section-btn a:HOVER{
+  background: #111;
+}
+
+.process-section-btn a img {
+  width: 20px;
+}
+
+/* property-section */
+.property-section {
+  padding-top: 117px;
+  padding-bottom: 88px;
+  background: #023661;
+}
+
+.propery-head h2 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 120%;
+  margin-bottom: 48px;
+}
+
+.property-links {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #1B4A71;
+}
+
+.property-links:last-child {
+  margin-bottom: unset;
+  border-bottom: unset;
+  padding-bottom: unset;
+}
+
+.links ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.links ul li {
+  list-style-type: disc;
+  color: #4E7290;
+}
+
+.links ul li a {
+  color: #4E7290;
+  font-family: " Plus Jakarta Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+
+.links ul li a:hover {
+  color: #EC6C2D;
+}
+
+/* recent-section css */
+.recent-section {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.recent-head {
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
+}
+
+.recent-head h2 {
+  color: #111;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 120%;
+  margin-bottom: 34px;
+}
+
+.recent-head p {
+  color: #9F9F9F;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 180%;
+  margin-bottom: 48px;
+}
+
+.recent-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 138px;
+}
+
+.form-group {
+  width: 23%;
+  border-radius: 16px;
+  border: 1px solid #E3E3E3;
+  padding: 16px 16px;
+  display: flex;
+  align-items: center;
+}
+
+/* extra */
+
+.form-group label {
+  position: relative;
+  cursor: pointer;
+  color: #111;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  text-transform: capitalize;
+}
+
+.form-group label:before {
+  content: '';
+ appearance: none;
+  background-color: transparent;
+  border-radius: 11px;
+  background: #EC6C2D;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 18px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group input:checked+label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  width: 6px;
+  height: 14px;
+  border: solid #FFF;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+
+}
+
+
+/* extra */
+
+.recent-featured-head {
+  width: 100%;
+  max-width: 719px;
+  margin: 0 auto;
+}
+
+.recent-featured-head p {
+  color: #111;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 120%;
+  margin-bottom: 54px;
+}
+
+.recent-featured-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.recent-featured-image {
+  width: 24%;
+}
+
+.recent-featured-image img:hover {
+  opacity: 0.8;
+}
+
+/* testimonials-section css */
+.testimonials-section {
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+
+.testimonials-section-inner {
+  padding: 80px 0px 80px;
+  border-radius: 32px;
+  background: #023661;
+}
+
+.testimonials-section-content {
+  padding: 0px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.testimonials-section-content p {
+  color: #FFF;
+  font-family: "Plus Jakarta Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  width: 60%;
+}
+
+.testimonials-section-content a {
+  border-radius: 50px;
+  padding: 24px 32px;
+  background: #ec6c2d;
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  transition: all 0.4s ease-in-out;
+}
+
+.testimonials-section-content a img {
+  width: 20px;
+}
+
+.testimonials-section-content a:hover {
+  background: #111;
+}
+
+
+.testimonials {
+  border-radius: 24px;
+  border: 1px solid #E3E3E3;
+  background: #FFF;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.06);
+  padding: 32px 32px;
+  width: 100%;
+  max-width: 520px;
+  margin-right: 24px;
+  min-height: 273px;
+}
+
+.testimonials p {
+  color: #111;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 180%;
+  margin-bottom: 64px;
+}
+
+.testimonials h5 {
+  color: #111;
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 140%;
+}
+
+.slick-dots {
+  bottom: -70px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.slick-dots li button {
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: #4E7290;
+  text-indent: -9999px;
+  text-align: center;
+}
+
+li.slick-active button {
+  width: 50px;
+  height: 11px;
+  border-radius: 32px;
+  background: #EC6C2D;
+}
+
+/* footer css */
+footer {
+  padding-top: 54px;
+  padding-bottom: 54px;
+  background: #F8F8F8;
+}
+
+.footer-logo {
+  width: 100%;
+  max-width: 178px;
+}
+
+.footer-description {
+  width: 100%;
+  max-width: 332px;
+}
+
+.footer-description p {
+  color: #777;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  margin-top: 54px;
+}
+
+.footer-head h3 {
+  color: #111;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+.footer-head ul {
+  width: 100%;
+  max-width: 400px;
+}
+
+.footer-head ul li {
+  margin-bottom: 32px;
+}
+
+.footer-head ul li a {
+  color: #111;
+  font-family: "Plus Jakarta Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-head ul li a:hover {
+  color: #ec6c2d;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 364px;
+}
+
+.dropdown::before {
+  position: absolute;
+  content: " \2193";
+  top: 14px;
+  right: 12px;
+  height: 20px;
+  width: 20px;
+  transform: rotate(270deg);
+}
+
+.dropdown input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #111;
+  padding: 16px;
+  justify-content: space-between;
+  background: #F8F8F8;
+  align-items: center;
+  align-self: stretch;
+}
+
+.dropdown input:focus {
+  outline: none;
+}
+
+.dropdown::placeholder {
+  color: #111;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+/* ALL MEDIA SCREENS CSS */
+
+/* Extra large devices (large laptops and desktops, 1600px and up) */
+@media only screen and (max-width: 1600px) {
+  .banner-congrates {
+    margin: unset;
+    margin-left: auto;
+  }
+
+  .benefits-box {
+    margin: 0 auto;
+  }
+
+  .team-members {
+    gap: 19px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1500px and up) */
+@media only screen and (max-width: 1500px) {
+  .homer-banner-content h1 {
+    position: relative;
+  }
+
+  .home-banner::before {
+    top: 207px;
+    right: 0px;
+  }
+
+  .team-members {
+    gap: 18px;
+  }
+
+  .testimonials {
+    padding: 32px 18px;
+
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1440px and up) */
+@media only screen and (max-width: 1440px) {
+  .homer-banner-content h1 {
+    font-size: 77px;
+  }
+
+  .benefits {
+    margin-left: 70px;
+  }
+
+  .experience-expert-p {
+    padding-right: 0px;
+  }
+
+  .experience-expert {
+    padding: 32px 19px 24px;
+  }
+
+  .experience-approach-p {
+    padding-right: 83px;
+  }
+
+  .team-members {
+    gap: 17px;
+  }
+
+  .analysis-section-boxes {
+    gap: 26px;
+  }
+
+  .form-group {
+    width: 24%;
+  }
+
+  .testimonials p {
+    max-height: 115px;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1366px and up) */
+@media only screen and (max-width: 1366px) {
+  header {
+    padding: 30px 40px;
+  }
+
+  .main-padding {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .homer-banner-content h1 {
+    font-size: 74px;
+  }
+
+  .about-banner-content h1 {
+    font-size: 72px;
+  }
+
+  .expert-box-content p span {
+    margin-top: 40px;
+  }
+
+  .team-members {
+    gap: 15px;
+  }
+
+  .homer-banner-content h1 {
+    font-size: 70px;
+  }
+
+  .analysis-box {
+    width: 31%;
+  }
+
+  .process-head h2 {
+    font-size: 52px;
+  }
+
+  .form-group {
+    padding: 16px 15px;
+  }
+
+  .testimonials-section-content p {
+    font-size: 39px;
+    width: 65%;
+  }
+
+  .testimonials-section-content {
+    padding: 0px 38px;
+
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1280px and up) */
+@media only screen and (max-width: 1280px) {
+  .header-logo {
+    margin-right: 40px;
+  }
+
+  ul#menu {
+    max-width: 957px;
+    margin-right: unset;
+  }
+
+  .navbar-nav li {
+    padding: 8px 19px;
+  }
+
+  .homer-banner-content h1 {
+    font-size: 63px;
+    line-height: 118%;
+  }
+
+  .homer-banner-content a {
+    padding: 20px 26px;
+  }
+
+  .challenges-content h2 {
+    font-size: 60px;
+    line-height: 118%;
+    margin-bottom: 31px;
+  }
+
+  .challenges-section {
+    padding-top: 75px;
+    padding-bottom: 91px;
+  }
+
+  .accordion-item h2 button {
+    font-size: 38px;
+  }
+
+  .process-section-content h2 {
+    font-size: 58px;
+    line-height: 119%;
+    margin-bottom: 38px;
+  }
+
+  .process-section {
+    padding-top: 67px;
+    padding-bottom: 64px;
+  }
+
+  .lender-content h2 {
+    font-size: 60px;
+    line-height: 118%;
+    margin-bottom: 32px;
+  }
+
+  .lender-section {
+    padding-top: 100px;
+    padding-bottom: 88px;
+  }
+
+  .footer-head ul li a {
+    font-size: 21px;
+    line-height: 116%;
+  }
+
+  .footer-head ul li {
+    margin-bottom: 26px;
+  }
+
+  footer {
+    padding-top: 42px;
+    padding-bottom: 19px;
+  }
+
+  .dropdown {
+    max-width: 305px;
+  }
+
+  .dropdown input {
+    padding: 10px;
+  }
+
+  .about-banner-content {
+    max-width: 690px;
+  }
+
+  .about-banner-content h1 {
+    font-size: 60px;
+  }
+
+  .about-left-content {
+    max-width: 467px;
+  }
+
+  .about-left-content h2 {
+    font-size: 50px;
+    line-height: 117%;
+  }
+
+  .about-left-content h3 {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+
+  .about-right-content {
+    max-width: 516px;
+  }
+
+  .counter h2 {
+    font-size: 31px;
+    line-height: 114%;
+    margin-bottom: 12px;
+  }
+
+  .about-counters {
+    padding: 38px 37px;
+    margin-top: 36px;
+    margin-bottom: 19px;
+  }
+
+  .about-record-content {
+    padding: 27px 36px 69px;
+  }
+
+  .experience-content h2 {
+    font-size: 47px;
+    line-height: 118%;
+    margin-bottom: 55px;
+  }
+
+  .about {
+    padding-top: 65px;
+    padding-bottom: 80px;
+  }
+
+  .experience-section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .experience-team {
+    gap: 21px;
+    margin-top: 59px;
+  }
+
+  .expert-section {
+    padding-top: 67px;
+    padding-bottom: 67px;
+  }
+
+  .expert-head h2 {
+    font-size: 58px;
+    line-height: 120%;
+    margin-bottom: 41px;
+  }
+
+  .expert-box-content p span {
+    margin-top: 19px;
+  }
+
+  .team h3 {
+    font-size: 30px;
+    line-height: 137%;
+    margin-bottom: 4px;
+  }
+
+  .homer-banner-content h1 {
+    font-size: 56px;
+    line-height: 115%;
+  }
+
+  .homer-banner-content h3 {
+    font-size: 30px;
+    line-height: 157%;
+    margin-bottom: 10px;
+  }
+
+  .analysis-section-boxes {
+    gap: 19px;
+  }
+
+  .analysis-box {
+    width: 32%;
+  }
+
+  .analysis-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+  }
+
+  .services-acordian h2 {
+    font-size: 48px;
+    line-height: 120%;
+  }
+
+  .process-head h2 {
+    font-size: 36px;
+    margin-bottom: 46px;
+  }
+
+  .process-section-btn p {
+    width: 74%;
+  }
+
+  .propery-head h2 {
+    font-size: 55px;
+    margin-bottom: 35px;
+  }
+
+  .property-section {
+    padding-top: 73px;
+    padding-bottom: 63px;
+    ;
+  }
+
+  .recent-head h2 {
+    font-size: 48px;
+    line-height: 117%;
+    margin-bottom: 25px;
+  }
+
+  .recent-section {
+    padding-top: 46px;
+    padding-bottom: 11px;
+  }
+
+  .recent-checkboxes {
+    gap: 13px;
+    margin-bottom: 63px;
+  }
+
+  .testimonials-section {
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+
+  .testimonials-section-content p {
+    font-size: 35px;
+  }
+
+  .testimonials-section-inner {
+    padding: 55px 0px 46px;
+  }
+
+  .testimonials-section-content {
+    padding: 0px 20px;
+  }
+
+  .testimonials p {
+    font-size: 15px;
+    margin-bottom: 49px;
+  }
+
+  .testimonials {
+    padding: 32px 17px;
+    min-height: 239px;
+  }
+
+  .footer-head ul li a {
+    font-size: 19px;
+    line-height: 113%;
+  }
+
+  .footer-logo {
+    max-width: 166px;
+  }
+
+  .footer-description p {
+    font-size: 16px;
+    line-height: 172%;
+    margin-top: 30px;
+  }
+
+  .footer-head ul li {
+    margin-bottom: 18px;
+  }
+
+  footer {
+    padding-top: 22px;
+    padding-bottom: 8px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .header-logo {
+    margin-right: 22px;
+    max-width: 162px;
+  }
+
+  header {
+    padding: 30px 30px;
+  }
+
+  .homer-banner-content h1 {
+    font-size: 48px;
+    line-height: 114%;
+  }
+
+  .homer-banner-content {
+    max-width: 640px;
+  }
+
+  .home-banner::before {
+    max-width: 640px;
+    top: 206px;
+    right: 1px;
+    height: 594px;
+
+  }
+
+  .home-banner {
+    padding-top: 193px;
+    padding-bottom: 55px;
+  }
+
+  .challenges-content h2 {
+    font-size: 40px;
+    line-height: 116%;
+    margin-bottom: 28px;
+  }
+
+  .challenges-content-description p {
+    font-size: 17px;
+    line-height: 149%;
+    margin-bottom: 34px;
+  }
+
+  .accordion-item h2 button {
+    font-size: 27px;
+  }
+
+  .accordion-item p {
+    font-size: 17px;
+    line-height: 170%;
+  }
+
+  .challenges-section {
+    padding-top: 65px;
+    padding-bottom: 59px;
+  }
+
+  .process-section-content h2 {
+    font-size: 42px;
+    line-height: 115%;
+    margin-bottom: 25px;
+  }
+
+  .process-section-content p {
+    line-height: 176%;
+    margin-bottom: 58px;
+  }
+
+  .lender-content h2 {
+    font-size: 51px;
+    line-height: 113%;
+    margin-bottom: 30px;
+  }
+
+  .lender-content p {
+    font-size: 17px;
+    line-height: 177%;
+  }
+
+  .lender-card h2 {
+    font-size: 21px;
+    line-height: 116%;
+    margin-bottom: 6px;
+  }
+
+  .lender-card p {
+    line-height: 160%;
+  }
+
+  .lender-description p {
+    line-height: 170%;
+    margin: 22px 0px 45px;
+  }
+
+  .lender-description a {
+    padding: 19px 24px;
+    line-height: 140%;
+  }
+
+  .lender-section {
+    padding-top: 67px;
+    padding-bottom: 69px;
+  }
+
+  .footer-head ul li a {
+    font-size: 17px;
+    line-height: 110%;
+  }
+
+  .footer-head ul li {
+    margin-bottom: 14px;
+  }
+
+  .footer-description p {
+    font-size: 16px;
+    line-height: 164%;
+    margin-top: 29px;
+  }
+
+  .about-banner-content h1 {
+    font-size: 47px;
+  }
+
+  .about-banner-content {
+    max-width: 546px;
+  }
+
+  .about-banner {
+    height: 80vh;
+  }
+
+  .about-left-content h3 {
+    font-size: 26px;
+    margin-bottom: 16px;
+  }
+
+  .about-left-content h2 {
+    font-size: 38px;
+    line-height: 114%;
+  }
+
+  .about-left-content {
+    max-width: 425px;
+  }
+
+  .about-right-content p {
+    font-size: 16px;
+    line-height: 162%;
+  }
+
+  .about {
+    padding-top: 44px;
+    padding-bottom: 46px;
+  }
+
+  .counter h2 {
+    font-size: 27px;
+    line-height: 112%;
+    margin-bottom: 12px;
+  }
+
+  .about-counters {
+    padding: 28px 34px;
+    margin-top: 30px;
+    margin-bottom: 19px;
+  }
+
+  .about-record-content {
+    padding: 27px 21px 42px;
+  }
+
+  .about-record-content p {
+    font-size: 17px;
+    margin-top: 47px;
+  }
+
+  .experience-content h2 {
+    font-size: 40px;
+    line-height: 112%;
+    margin-bottom: 53px;
+  }
+
+  .experience-section {
+    padding-top: 39px;
+    padding-bottom: 44px;
+  }
+
+  .experience-expert {
+    padding: 28px 19px 21px;
+  }
+
+  .experience-expert-p {
+    font-size: 15px;
+    line-height: 177%;
+  }
+
+  .experience-expert-h2 {
+    font-size: 23px;
+    line-height: 118%;
+    margin-bottom: 15px;
+  }
+
+  .experience-approach {
+    width: 66%;
+    padding: 26px 24px 20px;
+  }
+
+  .expert-head h2 {
+    font-size: 53px;
+    line-height: 115%;
+    margin-bottom: 35px;
+  }
+
+  .expert-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .expert-box-content h2 {
+    font-size: 38px;
+    line-height: 176%;
+    margin-top: 20px;
+  }
+
+  .expert-box-content a {
+    padding: 12px 24px;
+    font-size: 15px;
+    line-height: 138%;
+  }
+
+  .expert-box-content p {
+    font-size: 17px;
+    line-height: 178%;
+  }
+
+  .expert-box-content p span {
+    margin-top: 10px;
+  }
+
+  .team-members {
+    gap: 14px;
+  }
+
+  .team h3 {
+    font-size: 28px;
+    line-height: 135%;
+    margin-bottom: 3px;
+  }
+
+  .team p {
+    font-size: 17px;
+    line-height: 157%;
+  }
+
+  .main-padding {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .homer-banner-content h3 {
+    font-size: 25px;
+    line-height: 153%;
+    margin-bottom: 8px;
+  }
+
+  .homer-banner-content h1 {
+    font-size: 42px;
+    line-height: 113%;
+  }
+
+  .what-we-banner p {
+    max-width: 628px;
+    font-size: 17px;
+    margin-bottom: 43px;
+    line-height: 164%;
+  }
+
+  .our {
+    margin-top: 30px;
+  }
+
+  .what-we-banner {
+    padding-top: 188px;
+    padding-bottom: 103px;
+    height: 90vh;
+  }
+
+  .analysis-section {
+    padding-top: 49px;
+    padding-bottom: 45px;
+  }
+
+  .analysis-box img {
+    width: 64px;
+    margin-bottom: 23px;
+  }
+
+  .analysis-box {
+    width: 32%;
+    padding: 27px 30px;
+  }
+
+  .services-acordian h2 {
+    font-size: 41px;
+    line-height: 120%;
+    margin-bottom: 10px;
+  }
+
+  .services-image {
+    max-width: 530px;
+  }
+
+  .services-section {
+    padding-top: 70px;
+    padding-bottom: 37px;
+  }
+
+  .process-head h2 {
+    font-size: 27px;
+    margin-bottom: 31px;
+  }
+
+  .process-head {
+    max-width: 639px;
+  }
+
+  .progress-boxe {
+    padding: 21px 36px;
+  }
+
+  .process-section-btn p {
+    line-height: 165%;
+  }
+
+  .process-section-btn a {
+    padding: 16px 21px;
+    line-height: 140%;
+  }
+
+  .processs-section {
+    padding-top: 26px;
+    padding-bottom: 44px;
+  }
+
+  .propery-head h2 {
+    font-size: 37px;
+    margin-bottom: 22px;
+  }
+
+  .links ul li a {
+    font-size: 22px;
+    line-height: 158%;
+  }
+
+  .links ul {
+    margin-bottom: 10px;
+  }
+
+  .property-links {
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+  }
+
+  .property-section {
+    padding-top: 52px;
+    padding-bottom: 43px;
+  }
+
+  .recent-head h2 {
+    font-size: 40px;
+    line-height: 113%;
+    margin-bottom: 15px;
+  }
+
+  .form-group {
+    padding: 12px 7px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+    line-height: 156%;
+  }
+
+  .recent-checkboxes {
+    gap: 13px;
+    margin-bottom: 29px;
+  }
+
+  .recent-featured-head p {
+    font-size: 28px;
+    line-height: 120%;
+    margin-bottom: 33px;
+  }
+
+  .recent-featured-gallery {
+    gap: 14px;
+  }
+
+  .testimonials-section-content p {
+    font-size: 32px;
+  }
+
+  .testimonials-section-content a {
+    padding: 18px 22px;
+    font-size: 15px;
+    line-height: 130%;
+  }
+
+  .testimonials-section-content p {
+    font-size: 27px;
+  }
+
+  .testimonials-section-inner {
+    padding: 35px 0px 37px;
+  }
+
+  .slick-dots {
+    bottom: -55px;
+  }
+
+  .testimonials p {
+    font-size: 14px;
+    margin-bottom: 34px;
+  }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1153px and up) */
+@media only screen and (max-width: 1153px) {
+  .header-logo {
+    margin-right: 49px;
+    max-width: 146px;
+  }
+
+  ul#menu {
+    max-width: 904px;
+  }
+
+  .navbar-nav li {
+    padding: 5px 2px;
+  }
+
+  .homer-banner-content h1 {
+    font-size: 31px;
+    line-height: 125%;
+  }
+
+  .homer-banner-content {
+    max-width: 516px;
+  }
+
+  .homer-banner-content p {
+    font-size: 17px;
+    line-height: 177%;
+    margin-bottom: 47px;
+  }
+
+  .homer-banner-content a {
+    padding: 15px 15px;
+    font-size: 15px;
+  }
+
+  header {
+    padding: 30px 25px;
+  }
+
+  .main-padding {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .home-banner::before {
+    max-width: 625px;
+    top: 199px;
+    right: 4px;
+    height: 489px;
+  }
+
+  .challenges-content h2 {
+    font-size: 33px;
+    line-height: 114%;
+    margin-bottom: 27px;
+  }
+
+  .challenges-content {
+    max-width: 383px;
+  }
+
+  .process-section-content a {
+    padding: 18px 17px;
+    font-size: 15px;
+  }
+
+  .homer-banner-content h3 {
+    font-size: 24px;
+    line-height: 151%;
+    margin-bottom: 9px;
+  }
+
+  .our {
+    margin-top: 21px;
+  }
+
+  .progress-boxes {
+    gap: 20px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1114px and up) */
+@media only screen and (max-width: 1114px) {
+  .experience-team {
+    gap: 19px;
+    margin-top: 59px;
+  }
+
+  .team-members {
+    gap: 12px;
+  }
+
+  .recent-featured-gallery {
+    gap: 12px;
+  }
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (max-width: 1024px) {
+  .header-logo {
+    margin-right: 41px;
+    max-width: 124px;
+  }
+
+  header {
+    padding: 3px 20px;
+  }
+
+  .main-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .home-banner::before {
+    max-width: 625px;
+    top: 188px;
+    right: 5px;
+    height: 485px;
+  }
+
+  .benefits {
+    margin-top: -22px;
+  }
+
+  .challenges-content h2 {
+    font-size: 30px;
+    line-height: 113%;
+    margin-bottom: 23px;
+  }
+
+  .challenges-section {
+    padding-top: 48px;
+    padding-bottom: 44px;
+  }
+
+  .process-section-content h2 {
+    font-size: 37px;
+    line-height: 115%;
+    margin-bottom: 22px;
+  }
+
+  .process-section-content p {
+    line-height: 170%;
+    margin-bottom: 46px;
+  }
+
+  .process-section {
+    padding-top: 37px;
+    padding-bottom: 54px;
+  }
+
+  .lender-content h2 {
+    font-size: 44px;
+    line-height: 113%;
+    margin-bottom: 27px;
+  }
+
+  .lender-card h2 {
+    font-size: 20px;
+    line-height: 116%;
+    margin-bottom: 5px;
+  }
+
+  .lender-card p {
+    line-height: 155%;
+    font-size: 15px;
+  }
+
+  .lender-card {
+    max-width: 689px;
+    padding: 21px 18px;
+    margin-bottom: 14px;
+  }
+
+  .lender-section {
+    padding-top: 55px;
+    padding-bottom: 53px;
+  }
+
+  .lender-description p {
+    line-height: 164%;
+    margin: 20px 0px 37px;
+  }
+
+  .dropdown {
+    max-width: 266px;
+  }
+
+  .footer-head h3 {
+    margin-bottom: 14px;
+  }
+
+  .about-banner-content h1 {
+    font-size: 43px;
+  }
+
+  .about-banner-content {
+    max-width: 531px;
+  }
+
+  .about-banner {
+    height: 63vh;
+  }
+
+  .about-left-content h3 {
+    font-size: 23px;
+    margin-bottom: 14px;
+  }
+
+  .about-left-content h2 {
+    font-size: 34px;
+    line-height: 114%;
+  }
+
+  .about-left-content {
+    max-width: 382px;
+  }
+
+  .about-record-content a {
+    padding: 11px 26px;
+    font-size: 15px;
+    line-height: 138%;
+  }
+
+  .about-record-content p {
+    font-size: 16px;
+    margin-top: 34px;
+  }
+
+  .about-record-content {
+    padding: 25px 18px 20px;
+  }
+
+  .experience-content h2 {
+    font-size: 33px;
+    line-height: 111%;
+    margin-bottom: 51px;
+  }
+
+  .experience-content a {
+    padding: 19px 29px;
+    font-size: 15px;
+    line-height: 139%;
+  }
+
+  .expert-head h2 {
+    font-size: 42px;
+    margin-bottom: 28px;
+  }
+
+  .expert-box-content h2 {
+    font-size: 34px;
+    margin-top: 17px;
+  }
+
+  .expert-box-content p {
+    font-size: 15px;
+    line-height: 171%;
+  }
+
+  .expert-box {
+    padding: 32px 28px 0px 0px;
+  }
+
+  .team h3 {
+    font-size: 24px;
+    line-height: 133%;
+    margin-bottom: 2px;
+  }
+
+  .team p {
+    font-size: 15px;
+    line-height: 157%;
+  }
+
+  .team-image {
+    margin-bottom: 14px;
+  }
+
+  .team-section {
+    padding-bottom: 49px;
+  }
+
+  .homer-banner-content h3 {
+    font-size: 21px;
+  }
+
+  .homer-banner-content p {
+    font-size: 16px;
+    line-height: 170%;
+    margin-bottom: 35px;
+  }
+
+  .our {
+    margin-top: 13px;
+  }
+
+  .what-we-banner {
+    padding-top: 158px;
+    padding-bottom: 21px;
+    height: 82vh;
+  }
+
+  .analysis-box img {
+    width: 51px;
+    margin-bottom: 20px;
+  }
+
+  .analysis-box {
+    padding: 21px 24px;
+  }
+
+  .analysis-box h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .services-section {
+    padding-top: 61px;
+    padding-bottom: 35px;
+  }
+
+  .process-head h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .progress-boxes {
+    gap: 19px;
+  }
+
+  .process-section-btn {
+    margin-top: 50px;
+  }
+
+  .process-section-btn a {
+    padding: 13px 17px;
+    line-height: 140%;
+    font-size: 15px;
+  }
+
+  .propery-head h2 {
+    font-size: 33px;
+    margin-bottom: 19px;
+  }
+
+  .property-links {
+    margin-bottom: 28px;
+    padding-bottom: 4px;
+  }
+
+  .property-section {
+    padding-top: 40px;
+    padding-bottom: 31px;
+  }
+
+  .recent-head h2 {
+    font-size: 34px;
+    line-height: 113%;
+    margin-bottom: 13px;
+  }
+
+  .recent-head p {
+    font-size: 17px;
+    line-height: 152%;
+    margin-bottom: 29px;
+  }
+
+  .recent-checkboxes {
+    gap: 12px;
+    margin-bottom: 29px;
+  }
+
+  .testimonials-section-content p {
+    font-size: 19px;
+  }
+
+  .testimonials-section-content a {
+    padding: 15px 15px;
+    font-size: 15px;
+    line-height: 130%;
+  }
+
+  .testimonials-section-content {
+    padding: 0px 30px;
+    margin-bottom: 47px;
+  }
+
+  .testimonials p {
+    max-height: 129px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .benefits {
+    margin-top: 6px;
+  }
+
+  .home-banner::before {
+    max-width: 626px;
+    top: 188px;
+    right: 5px;
+    height: 478px;
+  }
+
+  .counter p {
+    font-size: 15px;
+  }
+
+  .experience-team {
+    gap: 17px;
+    margin-top: 59px;
+  }
+
+  .counter:last-child {
+    text-align: justify;
+    border-right: unset;
+    width: 23%;
+    margin-left: auto;
+  }
+
+  .counter h2 {
+    font-size: 25px;
+    line-height: 112%;
+    margin-bottom: 9px;
+  }
+
+  .analysis-section-boxes {
+    gap: 18px;
+  }
+
+  .progress-boxes {
+    gap: 18px;
+  }
+
+  .footer-description p {
+    font-size: 15px;
+    line-height: 159%;
+    margin-top: 26px;
+  }
+
+  .footer-head ul li a {
+    font-size: 16px;
+    line-height: 109%;
+  }
+
+  .footer-head ul li {
+    margin-bottom: 8px;
+  }
+
+  .form-group {
+    width: 49%;
+  }
+}
+
+/* Large devices (laptops/desktops, 991px and up) */
+@media only screen and (max-width: 991px) {
+  header {
+    position: absolute;
+    width: 100%;
+    padding: 0px 0px;
+  }
+
+  .header-logo {
+    margin-right: 41px;
+    max-width: 124px;
+    margin-left: 20px;
+  }
+
+  header .container-fluid {
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+  .navbar-toggler {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+
+  .navbar-toggler-icon {
+    height: 3px;
+    width: 38px;
+    background-image: unset;
+    background-color: #101010;
+    margin: 5px 0px;
+    border-radius: 5px;
+  }
+
+  #about-page .navbar-toggler-icon {
+    background-color: #FFF;
+  }
+
+  ul#menu {
+    max-width: 100%;
+    text-align: center;
+    padding: 50px 0px;
+    background: #FFF;
+  }
+
+  .navbar-toggler:focus {
+    text-decoration: none;
+    box-shadow: none;
+    outline: none;
+  }
+
+  .main-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .home-banner {
+    padding-top: 166px;
+    padding-bottom: 49px;
+  }
+
+  .benefits {
+    margin-top: 14px;
+  }
+
+  .home-banner::before {
+    max-width: 626px;
+    top: 179px;
+    right: 0px;
+    height: 470px;
+  }
+
+  .homer-banner-content a {
+    position: static;
+  }
+
+  .accordion-item h2 button {
+    font-size: 24px;
+  }
+
+  .about-banner {
+    height: 59vh;
+  }
+
+  #about-page li a {
+    color: #111;
+  }
+}
+
+/* Medium devices (landscape tablets, 884px and up) */
+@media only screen and (max-width: 884px) {
+  .counter p {
+    font-size: 14px;
+  }
+
+  .counter:last-child {
+    width: 24%;
+  }
+
+  .about-record-content p {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+
+  .experience-team {
+    gap: 16px;
+    margin-top: 55px;
+  }
+
+  .expert-box {
+    padding: 30px 10px 0px 0px;
+  }
+
+  .expert-box-content p {
+    font-size: 14px;
+    line-height: 168%;
+  }
+
+  .team-members {
+    gap: 11px;
+  }
+
+  .analysis-section-boxes {
+    gap: 16px;
+  }
+
+  .progress-boxes {
+    gap: 16px;
+  }
+
+  .recent-featured-gallery {
+    gap: 11px;
+  }
+}
+
+/* Medium devices (landscape tablets, 834px and up) */
+@media only screen and (max-width: 834px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .home-banner::before {
+    max-width: 416px;
+    top: 194px;
+    right: 16px;
+    height: 435px;
+  }
+
+  .main-padding {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer-head ul li a {
+    font-size: 14px;
+    line-height: 107%;
+  }
+
+  .homer-banner-content p {
+    font-size: 15px;
+    line-height: 170%;
+    margin-bottom: 35px;
+    position: relative;
+  }
+
+  .experience-expert {
+    padding: 28px 19px 21px;
+    width: 48%;
+    margin: 0 auto;
+  }
+
+  .experience-approach {
+    width: 99%;
+    padding: 26px 24px 20px;
+    order: 1;
+  }
+
+  .team-members {
+    gap: 9px;
+  }
+
+  .what-we-banner {
+    padding-top: 123px;
+    padding-bottom: 3px;
+    height: 76vh;
+  }
+
+  .analysis-box {
+    padding: 18px 19px;
+  }
+
+  .analysis-box h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .analysis-box p {
+    font-size: 15px;
+    line-height: 169%;
+  }
+
+  .analysis-section-boxes {
+    gap: 14px;
+  }
+
+  .progress-boxe {
+    padding: 18px 18px;
+  }
+
+  .progress-boxe h3 {
+    font-size: 23px;
+    line-height: 138%;
+
+  }
+
+  .progress-boxes {
+    gap: 14px;
+  }
+
+  .links ul li a {
+    font-size: 20px;
+    line-height: 156%;
+  }
+
+  .links ul {
+    margin-bottom: 10px;
+  }
+
+  .recent-featured-image {
+    width: 49%;
+    margin: 0 auto;
+  }
+
+  .footer-head ul {
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+  }
+
+  .banner-congrates {
+    margin-top: 40px;
+  }
+
+  .benefits {
+    margin-left: 0px;
+  }
+
+  .home-banner {
+    padding-top: 152px;
+    padding-bottom: 30px;
+  }
+
+  .home-banner::before {
+    max-width: 425px;
+    top: 445px;
+    right: 168px;
+    height: 436px;
+  }
+
+  .challenges-accordions {
+    width: 100%;
+    max-width: 668px;
+    margin: 0 auto;
+  }
+
+  .lender-content p {
+    line-height: 150%;
+    margin-bottom: 20px;
+  }
+
+  .lender-content {
+    width: 100%;
+    max-width: 462px;
+  }
+
+  .dropdown {
+    max-width: 287px;
+  }
+
+  .footer-description p {
+    margin-bottom: 21px;
+  }
+
+  .about-counters {
+    padding: 25px 23px;
+    margin-top: 28px;
+    margin-bottom: 19px;
+  }
+
+  .counter {
+    width: 24%;
+  }
+
+  .counter:first-child {
+    text-align: justify;
+    width: 22%;
+  }
+
+  .counter:last-child {
+    width: 27%;
+  }
+
+  .about-record-content {
+    padding: 27px 21px 20px;
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .expert-box {
+    padding: 0px 10px 22px 0px;
+    display: block;
+  }
+
+  .expert-box-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .expert-box-image {
+    width: 100%;
+    max-width: 660px;
+    margin-bottom: 33px;
+  }
+
+  .team {
+    width: 48%;
+  }
+
+  .team-members {
+    gap: 20px;
+  }
+
+  .services-image {
+    max-width: 530px;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+}
+
+/* Medium devices (landscape tablets, 767px and up) */
+@media only screen and (max-width: 767px) {}
+
+/* Medium devices (landscape tablets, and large phones 640px and up) */
+@media only screen and (max-width: 640px) {
+  .counter {
+    width: 48%;
+    text-align: justify;
+  }
+
+  .counter:first-child {
+    text-align: justify;
+    width: 48%;
+    margin-bottom: 20px;
+  }
+
+  .counter:last-child {
+    width: 48%;
+    text-align: justify;
+  }
+
+  .counter:nth-child(2) {
+    padding-left: 20px;
+    border-right: none;
+  }
+
+  .experience-expert-h2 {
+    font-size: 19px;
+    line-height: 117%;
+    margin-bottom: 16px;
+  }
+
+  .analysis-box {
+    padding: 18px 19px;
+    width: 48%;
+  }
+
+  .progress-boxe {
+    padding: 18px 18px;
+    width: 48%;
+  }
+
+  .links ul {
+    gap: 28px;
+  }
+
+  .property-links {
+    width: 100%;
+    max-width: 585px;
+  }
+
+  .form-group {
+    width: 99%;
+  }
+}
+
+/* Medium devices (landscape tablets, and large phones 575px and up) */
+@media only screen and (max-width: 575px) {
+  .homer-banner-content {
+    max-width: 411px;
+  }
+
+  .challenges-section {
+    padding-top: 19px;
+    padding-bottom: 29px;
+  }
+
+  .process-section-content {
+    max-width: 468px;
+  }
+
+  .dropdown {
+    max-width: 387px;
+    margin-bottom: 20px;
+  }
+
+  .about-banner-content h1 {
+    font-size: 34px;
+  }
+
+  .about-banner {
+    height: 49vh;
+  }
+
+  .about-left-content h2 {
+    font-size: 30px;
+    line-height: 121%;
+  }
+
+  .about-left-content {
+    max-width: 335px;
+    margin-bottom: 15px;
+  }
+
+  .experience-expert {
+    padding: 30px 21px 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .experience-approach-p {
+    padding-right: 33px;
+  }
+
+  .experience-section {
+    padding-top: 33px;
+    padding-bottom: 38px;
+  }
+
+  .expert-head h2 {
+    font-size: 38px;
+    margin-bottom: 22px;
+  }
+
+  .expert-section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .services-acordian h2 {
+    font-size: 37px;
+    line-height: 120%;
+    margin-bottom: 10px;
+  }
+
+  .process-section-btn {
+    margin-top: 30px;
+    display: block;
+  }
+
+  .process-section-btn p {
+    width: 91%;
+    margin-bottom: 25px;
+  }
+
+  .propery-head h2 {
+    font-size: 30px;
+    margin-bottom: 18px;
+  }
+
+  .links ul li a {
+    font-size: 16px;
+    line-height: 122%;
+  }
+
+  .process-head h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  .services-section {
+    padding-top: 33px;
+    padding-bottom: 14px;
+  }
+
+  .recent-section {
+    padding-top: 33px;
+    padding-bottom: 0px;
+  }
+
+  .recent-featured-image {
+    width: 47%;
+  }
+
+  .testimonials-section-content {
+    padding: 0px 17px;
+    margin-bottom: 44px;
+    display: block;
+  }
+
+  .testimonials-section-content p {
+    width: 95%;
+    margin-bottom: 30px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 540px and up) */
+@media only screen and (max-width: 540px) {
+  .home-banner::before {
+    max-width: 435px;
+    top: 489px;
+    right: 82px;
+    height: 418px;
+  }
+
+  .about-record-content {
+    padding: 27px 21px 20px;
+    max-width: 100%;
+    margin-bottom: 19px;
+  }
+
+  .team-members {
+    gap: 18px;
+  }
+}
+
+/*  small Mobile devices( small Mobile devices, 480px and up) */
+@media only screen and (max-width: 480px) {
+  .homer-banner-content {
+    max-width: 334px;
+  }
+
+  .home-banner {
+    padding-top: 108px;
+    padding-bottom: 29px;
+  }
+
+  .benefits-box {
+    margin: unset;
+  }
+
+  .home-banner::before {
+    max-width: 443px;
+    top: 442px;
+    right: 39px;
+    height: 415px;
+  }
+
+  .banner-congrates p {
+    font-size: 14.811px;
+  }
+
+  .about-banner-content {
+    max-width: 396px;
+  }
+
+  .about-banner {
+    height: 45vh;
+  }
+
+  .counter:first-child {
+    width: 100%;
+    margin-bottom: 0px;
+    border-right: unset;
+    border-bottom: 1px solid #e3e3e3;
+    padding: 20px 0px;
+  }
+
+  .counter {
+    width: 100%;
+    padding: 20px 0px;
+    border-right: unset;
+    border-bottom: 1px solid #e3e3e3;
+  }
+
+  .counter:nth-child(2) {
+    padding-left: 0px;
+  }
+
+  .counter:last-child {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .team-members {
+    gap: 16px;
+  }
+
+  .what-we-banner {
+    padding-top: 122px;
+    padding-bottom: 3px;
+    height: 85vh;
+  }
+
+  .homer-banner-content p {
+    font-size: 14px;
+    line-height: 168%;
+  }
+
+  .our {
+    margin-top: 9px;
+  }
+}
+
+/*  small Mobile devices( small Mobile devices, 428px and up) */
+@media only screen and (max-width: 428px) {
+  .homer-banner-content h1 {
+    font-size: 36px;
+    line-height: 125%;
+  }
+
+  .banner-congrates {
+    margin-top: 76px;
+  }
+
+  .home-banner::before {
+    max-width: 464px;
+    top: 592px;
+    right: 4px;
+    height: 442px;
+  }
+
+  .process-section-content p {
+    line-height: 170%;
+    margin-bottom: 20px;
+  }
+
+  .process-section-content a {
+    padding: 14px 11px;
+    font-size: 14px;
+    margin-top: 7px;
+    display: inline-block;
+  }
+
+  .process-section {
+    padding-top: 27px;
+    padding-bottom: 36px;
+  }
+
+  .lender-section {
+    padding-top: 32px;
+    padding-bottom: 50px;
+  }
+
+  .lender-content h2 {
+    font-size: 37px;
+    line-height: 120%;
+    margin-bottom: 18px;
+  }
+
+  .lender-description a {
+    padding: 16px 22px;
+    line-height: 140%;
+  }
+
+  .about-banner-content h1 {
+    font-size: 33px;
+  }
+
+  .about {
+    padding-top: 28px;
+    padding-bottom: 22px;
+  }
+
+  .about-left-content {
+    max-width: 261px;
+    margin-bottom: 10px;
+  }
+
+  .about-left-content h2 {
+    font-size: 27px;
+    line-height: 120%;
+  }
+
+  .about-counters {
+    padding: 22px 18px;
+    margin-top: 19px;
+    margin-bottom: 17px;
+  }
+
+  .experience-section {
+    padding-top: 22px;
+    padding-bottom: 29px;
+  }
+
+  .experience-content h2 {
+    font-size: 29px;
+    line-height: 116%;
+    margin-bottom: 41px;
+  }
+
+  .experience-content {
+    max-width: 332px;
+  }
+
+  .experience-content a {
+    padding: 17px 26px;
+    font-size: 14px;
+    line-height: 138%;
+  }
+
+  .experience-team {
+    gap: 15px;
+    margin-top: 38px;
+  }
+
+  .expert-head h2 {
+    font-size: 32px;
+    margin-bottom: 18px;
+  }
+
+  .team {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .homer-banner-content h1 {
+    font-size: 30px;
+    line-height: 125%;
+  }
+
+  .analysis-box {
+    padding: 18px 19px;
+    width: 100%;
+  }
+
+  .services-acordian h2 {
+    font-size: 32px;
+    line-height: 120%;
+    margin-bottom: 9px;
+  }
+
+  .services-section {
+    padding-top: 26px;
+    padding-bottom: 7px;
+  }
+
+  .process-head h2 {
+    font-size: 16px;
+    margin-bottom: 19px;
+  }
+
+  .progress-boxe {
+    padding: 18px 18px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .propery-head h2 {
+    font-size: 27px;
+    margin-bottom: 16px;
+  }
+
+  .recent-head h2 {
+    font-size: 31px;
+    line-height: 113%;
+    margin-bottom: 12px;
+  }
+
+  .recent-section {
+    padding-top: 22px;
+    padding-bottom: 0px;
+  }
+
+  .testimonials-section-content p {
+    font-size: 17px;
+  }
+
+  .dropdown {
+    max-width: 344px;
+    margin-bottom: 17px;
+  }
+}
+
+/*  small Mobile devices( small Mobile devices, 425px and up) */
+@media only screen and (max-width: 425px) {}
+
+/*  small Mobile devices( small Mobile devices, 414px and up) */
+@media only screen and (max-width: 414px) {}
+
+/*  small Mobile devices( small Mobile devices, 412px and up) */
+@media only screen and (max-width: 412px) {}
+
+/* extra small Mobile devices( extra small Mobile devices, 393px and up) */
+@media only screen and (max-width: 393px) {
+  .navbar-toggler {
+    margin-right: 6px;
+  }
+
+  .navbar-toggler-icon {
+    height: 3px;
+    width: 37px;
+    margin: 4px 0px;
+  }
+
+  .header-logo {
+    margin-left: 6px;
+  }
+
+  .main-padding {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .banner-congrates img {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+
+  .banner-congrates {
+    margin-top: 65px;
+    padding: 26px 17px;
+  }
+
+  .home-banner::before {
+    max-width: 466px;
+    top: 478px;
+    right: 5px;
+    height: 394px;
+  }
+
+  .challenges-content-description p {
+    margin-bottom: 8px;
+  }
+
+  .process-section-content h2 {
+    font-size: 28px;
+    line-height: 115%;
+    margin-bottom: 19px;
+  }
+
+  .process-section-content p {
+    line-height: 163%;
+    margin-bottom: 19px;
+    font-size: 15px;
+  }
+
+  .lender-content h2 {
+    font-size: 31px;
+    line-height: 120%;
+    margin-bottom: 18px;
+  }
+
+  .lender-content {
+    max-width: 321px;
+  }
+
+  .about-banner-content h1 {
+    font-size: 32px;
+  }
+
+  .about-banner {
+    height: 40vh;
+  }
+
+  .about {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .about-left-content h3 {
+    font-size: 22px;
+    margin-bottom: 9px;
+  }
+
+  .about-left-content h2 {
+    font-size: 25px;
+    line-height: 120%;
+  }
+
+  .experience-content h2 {
+    font-size: 28px;
+    line-height: 116%;
+    margin-bottom: 38px;
+  }
+
+  .experience-content a {
+    padding: 14px 21px;
+    font-size: 14px;
+    line-height: 138%;
+  }
+
+  .expert-head h2 {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+
+  .expert-box-image {
+    max-width: 313px;
+  }
+
+  .services-acordian h2 {
+    font-size: 31px;
+    line-height: 120%;
+    margin-bottom: 7px;
+  }
+
+  .services-section {
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+
+  .recent-featured-head p {
+    font-size: 21px;
+    line-height: 120%;
+    margin-bottom: 25px;
+  }
+
+  .recent-checkboxes {
+    gap: 12px;
+    margin-bottom: 19px;
+  }
+
+  .testimonials-section-content p {
+    font-size: 16px;
+  }
+}
+
+/* extra small Mobile devices( extra small Mobile devices, 375px and up) */
+@media only screen and (max-width: 375px) {}
+
+/* extra small Mobile devices( extra small Mobile devices, 360px and up) */
+@media only screen and (max-width: 360px) {
+  .homer-banner-content {
+    max-width: 285px;
+  }
+
+  .home-banner::before {
+    max-width: 466px;
+    top: 571px;
+    right: 5px;
+    height: 394px;
+  }
+
+  .banner-congrates {
+    width: 100%;
+    max-width: 261px;
+  }
+
+  .challenges-content h2 {
+    font-size: 26px;
+    line-height: 113%;
+    margin-bottom: 17px;
+  }
+
+  .home-banner {
+    padding-top: 81px;
+    padding-bottom: 7px;
+  }
+
+  .accordion-item h2 button {
+    font-size: 22px;
+  }
+
+  .process-section-content h2 {
+    font-size: 26px;
+    line-height: 115%;
+    margin-bottom: 16px;
+  }
+
+  .process-section {
+    padding-top: 21px;
+    padding-bottom: 24px;
+  }
+
+  .lender-content h2 {
+    font-size: 28px;
+    line-height: 120%;
+    margin-bottom: 16px;
+  }
+
+  .lender-content {
+    max-width: 292px;
+  }
+
+  .lender-section {
+    padding-top: 23px;
+    padding-bottom: 39px;
+  }
+
+  .lender-description a {
+    padding: 14px 15px;
+    line-height: 140%;
+    font-size: 15px;
+  }
+
+  .dropdown {
+    max-width: 297px;
+    margin-bottom: 17px;
+  }
+
+  .recent-featured-image {
+    width: 96%;
+    margin: 0 auto;
+  }
+
+  .testimonials-section {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  .testimonials-section-content a {
+    padding: 14px 13px;
+    font-size: 15px;
+    line-height: 130%;
+  }
+
+  .testimonials-section-content {
+    padding: 0px 15px;
+    margin-bottom: 34px;
+  }
+
+  .form-group label:before {
+    padding: 17px;
+    margin-right: 9px;
+  }
+
+  .recent-featured-head p {
+    font-size: 19px;
+    line-height: 120%;
+    margin-bottom: 14px;
+  }
+
+  .links ul {
+    gap: 24px;
+  }
+
+  .recent-head h2 {
+    font-size: 29px;
+    line-height: 113%;
+    margin-bottom: 11px;
+  }
+
+  .recent-section {
+    padding-top: 17px;
+  }
+}
+
+/*  extra small Mobile devices( extra small Mobile devices, 320px and up) */
+@media only screen and (max-width: 320px) {
+  .homer-banner-content h1 {
+    font-size: 28px;
+    line-height: 125%;
+  }
+}
